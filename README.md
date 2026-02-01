@@ -1,3 +1,18 @@
+## ⚠️ Important Note for Reviewers
+
+Please be aware that this project uses the **News API Developer Plan**.
+
+**Limitation:** The free tier of News API restricts requests to `localhost` only. If you are viewing the live demo on Vercel/Netlify, you will likely see a `426 Upgrade Required` error in the console, and the news feed will be empty.
+
+**To see the full functionality with real-time data:**
+
+1. Clone the repository.
+2. Run `npm install` and `npm run dev`.
+3. Open `http://localhost:5173`.
+4. Ensure your `.env` file contains a valid `VITE_NEWS_API_KEY`.
+
+This limitation is strictly a policy of the News API service and does not reflect the application's code logic.
+
 # 🌍 Smart News Aggregator
 
 A modern news application that bridges an external News API with a custom logic layer managed via Sanity CMS. The app dynamically classifies articles into topics and filters them based on rules defined in the cloud.
